@@ -1,0 +1,51 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+
+
+
+body {
+    background-color: $background-color;
+}
+
+* {
+    color: $font-color;
+}
+
+.main {
+    background-size: $background-size;
+    width: $main-width;
+    margin: $main-margin;
+}
+
+
+.container{
+    background-size: $background-size;
+    width: $container-width;
+    margin: $main-margin;
+    text-align: $container-text-align;
+}
+
+
+
+.fontgoogle {
+    font-family: $font-family;
+    font-weight: $font-weight-normal;
+}
+
+
+
+  @media (max-width: 768px) {
+    .main {
+        width: 100%; 
+    }
+}
